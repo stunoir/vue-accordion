@@ -2,6 +2,7 @@
   import AccordionComponent from './components/AccordionComponent.vue'
   import { ref } from 'vue'
 
+  // demo content
   const items = ref([
     {
       title: 'Lorem Ipsum Dolor',
@@ -37,10 +38,15 @@
 </script>
 
 <template>
-  <div class="section-padder">
+  <div class="page-padder">
     <div class="grid-container">
       <div class="grid-x grid-padding-x align-center">
         <div class="cell medium-8">
+          <h1>Accordion</h1>
+          <p>
+            This Vue component implements a responsive and accessible accordion, allowing users to toggle content panels
+            open or closed. It is built using the Composition API and supports dynamic data passed as props.
+          </p>
           <AccordionComponent :items="items"></AccordionComponent>
         </div>
       </div>
@@ -49,7 +55,7 @@
 </template>
 
 <style scoped>
-  .section-padder {
+  .page-padder {
     padding: 3rem 0;
   }
 </style>
